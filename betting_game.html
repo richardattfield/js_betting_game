@@ -3,9 +3,69 @@
   <head>
   <meta charset="UTF-8">
     <title></title>
+    <script src="/Users/Rich/Google Drive/dev/node_modules/jquery/dist/jquery.js"></script>
   </head>
   <body>
-      <h1>Welcome to Bet Away you Savings!</h1>
+    <table>
+			<thead>
+        <th colspan="2"><h2>Bet Away your Savings!</h2></th>
+
+
+			</thead>
+			<tbody>
+        <tr>
+          <td>
+            <form id="getStartBank">
+              Enter amount you want to play with
+              <input type="text" name="startBank" id="txtStartBank" size="10" >
+            </form>
+          </td>
+          <td>
+              <button type="submit" id="startBtn">START</button>
+          </td>
+        </tr>
+				<tr>
+					<td><p>Bank</p></td>
+					<td><p>Current bet $$</p></td>
+        </tr>
+        <tr>
+          <td><form id="playerBank">
+                <input type="text" name="playerBank" id="txtplayerBank" size="10">
+              </form>
+          </td>
+          <td>
+            <form id="playerWager">
+              <input type="text" name="playerWager" id="txtPlayerWager" size="10">
+            </form>
+          </td>
+          <td>
+            <button type="submit" id="letsGoBtn">Place bet!</button>
+          </td>
+        </tr>
+				<tr>
+          <td><p>Player guess</p></td>
+  				<td><p>Computer guess</p></td>
+        </tr>
+        <tr>
+          <td>
+              <form id="playerGuess">
+                <input type="text" name="playerGuess" id="txtPlayerGuess" size="10">
+              </form>
+            </td>
+          <td>
+            <form id="computerGuess">
+              <input type="text" name="computerGuess" id="txtComputerGuess" size="10">
+            </form>
+          </td>
+        </tr>
+          <td colspan="2">
+                <form id="outcome">
+                  <input type="text" name="outcome" id="txtOutcome" size="90" value="Outcome">
+                </form>
+          </td>
+				</tr>
+			</tbody>
+		</table>
         <script type="text/javascript" src="betting_game.js"></script>
   </body>
 </html>
